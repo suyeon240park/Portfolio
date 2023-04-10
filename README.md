@@ -7,8 +7,10 @@ This project aims to create a new website for Suyeon Park Portfolio in 2023, wit
 <img src="assets/images/website.jpg"/>
 
 # Future Updates
-- Language Support: automatic language detection based on the user's IP address and two language slots: English and Korean
+
 - About page: introduction, personality, hobbies, skill sets, programming languages, and education
+- UI for phones and tablets
+- Language Support: automatic language detection based on the user's IP address and two language slots: English and Korean
 - Projects: each project will redirect to another page, further explaining the purpose, objective, detailed process, conclusion, and reflection.
 - Copyright section
 
