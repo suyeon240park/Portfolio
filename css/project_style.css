@@ -65,8 +65,8 @@ body {
     text-decoration: none;
   }
 
-/* For devices with a maximum width of 799px */
-@media (max-width: 799px) {
+/* For devices with a maximum width of 480px (e.g. small smartphones) */
+@media (max-width: 480px) {
   .project {
     width: 100%;
     height: auto;
@@ -77,8 +77,20 @@ body {
   }
 }
 
-/* For devices with a minimum width of 800px */
-@media (min-width: 800px) {
+/* For devices with a minimum width of 481px and a maximum width of 767px (e.g. larger smartphones or small tablets) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .project {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+}
+
+/* For devices with a minimum width of 768px (e.g. tablets and desktops) */
+@media (min-width: 768px) {
   .project {
     width: 500px;
     height: 400px;
