@@ -14,4 +14,4 @@ This project aims to create a new website for Suyeon Park Portfolio in 2023, wit
 
 # References and Inspiration
 
-The main page template is edited from the [ParticleGround-Portfolio] template created by itsron143 and JanviRaina (https://github.com/itsron143/ParticleGround-Portfolio). I appreciate their kindness and generosity ❤️ and love their design!
+The main page template is edited from the [ParticleGround-Portfolio] template created by itsron143 and JanviRaina (https://github.com/itsron143/ParticleGround-Portfolio). I appreciate their kindness and generosity
