@@ -65,26 +65,27 @@ body {
     text-decoration: none;
   }
 
-  @media (max-width: 799px) {
-    .project {
-      width: 100%;
-      height: auto;
-      margin: 50px 0;
-      text-align: center;
-      color: white;
-      transition: transform 0.3s ease;
-    }
+/* For devices with a maximum width of 799px */
+@media (max-width: 799px) {
+  .project {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
   }
-  
-  /* For devices with a minimum width of 769px */
-  @media (min-width: 800px) {
-    .project {
-      width: 500px;
-      height: 400px;
-      margin: 100px;
-      text-align: center;
-      color: white;
-      transition: transform 0.3s ease;
-    }
+}
+
+/* For devices with a minimum width of 800px */
+@media (min-width: 800px) {
+  .project {
+    width: 500px;
+    height: 400px;
+    margin: 100px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
   }
+}
   
