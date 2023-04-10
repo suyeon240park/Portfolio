@@ -16,6 +16,16 @@
     <title>Projects</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Projects.html" id="projects-link">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  <main>
     <div id="particles">
       <div id="menu">
         <a href="About.html" style="font-size: 25px; text-decoration: none; margin: 20px;">About</a>
@@ -34,5 +44,28 @@
         &nbsp
       </div>
     </div>
+  </main>
+  <footer>
+    <p>Copyright &copy; 2023 Suyeon Park.
+			<a href="https://github.com/Suyeon240Park/Portfolio">GitHub Repository</a>
+		</p>
+	</footer>
+  <script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const projectsLink = document.getElementById("projects-link");
+			const projectsContainer = document.createElement("div");
+
+			projectsLink.addEventListener("click", function(e) {
+				e.preventDefault();
+
+				fetch("Projects.html")
+				.then(response => response.text())
+				.then(data => {
+					projectsContainer.innerHTML = data;
+					main.appendChild(projectsContainer);
+				});
+			});
+		});
+	</script>
   </body>
 </html>
