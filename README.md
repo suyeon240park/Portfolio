@@ -1,34 +1,15 @@
-# ParticleGround-Portfolio
+# Suyeon Park Portfolio
 
-A particle-theme template as a landing page for your portfolio.
+> https://suyeon240park.github.io/Portfolio/index.html
 
-> [Demo](https://landing-page--itsron717.repl.co/)
+<img src="assets/images/website.jpg"/>
 
-<img src="particle_demo/particle_demo.png"/>
-
-# Using the Template
-
-  - Fork and Clone the repository
-
-    ```
-    $ git clone https://github.com/itsron717/ParticleGround-Portfolio.git
-    ```
- 
-  - Go inside the main repository
-  
-    ```
-    $ cd ParticleGround-Portfolio
-    ```
-    
-  - Modify `index.html` to change the names and links to point at your pages.
-  
-  - Upload your resume in the place of `deedy.pdf` (Or One can use the famous deedy template and build on that)
-   
-# Particle Feature
-
-The particle feature was obtained with the help of this [particleground](https://github.com/jnicol/particleground). The changes in the particles such as speed, drift, colour, direction, density, etc. can be modified in `demo.js`. Refer to the above link for more details.
-
+# Future Updates
+- Language Support: automatic language detection based on the user's IP address and two language slots: English and Korean
+- About page: introduction, personality, hobbies, skill sets, programming languages, and education
+- Projects: each project will redirect to another page, further explaining the purpose, objective, detailed process, conclusion, and reflection.
+- Copyright section
 
 # References and Inspiration
 
-This template is a minimal form of the [Particle Jekyll Template](https://github.com/nrandecker/particle).
+The main page template is edited from the [ParticleGround-Portfolio] template created by itsron143 and JanviRaina (https://github.com/itsron143/ParticleGround-Portfolio). I appreciate their kindness and generosity ❤️ and love their design!
