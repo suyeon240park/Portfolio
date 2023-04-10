@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/project_style.css" />
+  </head>
+  <body class="fade-in">
+    <a href="index.html" class="back-link">&lt;</a>
+    <h1>Projects</h1>
+    <div class="projects">
+      <div class="project">
+        <img src="assets/images/website.jpg" alt="Project 1">
+        <h2>Portfolio Website Development</h2>
+        <p>Interactive HTML website portfolio for showcasing my engineering skills and project experience to the world.</p>
+      </div>
+      <div class="project">
+        <img src="assets/images/datathon.jpg" alt="Project 2">
+        <h2>Toronto Health Datathon</h2>
+        <p>A hackathon implementing ML models to solve real-world medical problems facing the Canadian healthcare system.</p>
+      </div>
+      <div class="project">
+        <img src="assets/images/supply.jpg" alt="Project 3">
+        <h2>Optimization of the Flow of Ambulatory Patients</h2>
+        <p>Developing an efficient system to reduce patient wait times and optimize supply management in the Emergency Department of Sunnybrook Hospital.</p>
+      </div>
+      <div class="project">
+        <img src="assets/images/cloudAI.jpg" alt="Project 4">
+        <h2>Image Generation AI</h2>
+        <p>Use machine learning algorithms to create new and original images based on a dataset.</p>
+      </div>
+      <div class="project">
+        <img src="assets/images/reversi.jpg" alt="Project 5">
+        <h2>AI Reversi Player</h2>
+        <p>Train a game algorithm to effectively play the game of Reversi by implementing optimal strategies and decision-making processes based on game state inputs.</p>
+      </div>
+      <div class="project">
+        <img src="assets/images/environment.jpg" alt="Project 6">
+        <h2>EWB Community Partnerships Project</h2>
+        <p>Collaborate with local communities and Toronto government council to create sustainable solutions for environmental challenges.</p>
+      </div>
+      <div class="project">
+        <img src="assets/images/room.png" alt="Project 7">
+        <h2>Indie Game Development</h2>
+        <p>Develop a solo-playing video game written in Python with a focus on creating an engaging and immersive gaming experience for players.</p>
+      </div>
+      <div class="project">
+        <div class="image-container">
+          <img src="assets/images/Toronto.jpg" alt="Project 8">
+          <div class="text-container">
+            <p>TBA...</p>
+          </div>
+        </div>
+        <h2>Toronto Housing Market Analysis</h2>
+        <p>Develop a predictive model that analyzes the Toronto housing market and predicts the profitability of marketing a house using a Random Forest Algorithm.</p>
+      </div>
+    </div>
+    <script>
+      const link = document.querySelector('.back-link');
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        fade(href);
+      });
+
+      function fade(href) {
+        const body = document.querySelector('body');
+        body.classList.add('fade-out');
+        setTimeout(function() {
+          window.location.href = href;
+        }, 500);
+      }
+
+      const body = document.querySelector('body');
+      setTimeout(function() {
+        body.classList.remove('fade-in');
+      }, 500);
+    </script>
+  </body>
+</html>
