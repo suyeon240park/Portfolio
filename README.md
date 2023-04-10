@@ -1,6 +1,8 @@
 # Suyeon Park Portfolio
 
-> https://suyeon240park.github.io/Portfolio/index.html
+This project aims to create a new website for Suyeon Park Portfolio in 2023, with the objective of showcasing my engineering skills and relevant work experience in an engaging and user-interactive way using JavaScript.
+
+> https://suyeon240park.github.io/Portfolio/
 
 <img src="assets/images/website.jpg"/>
 
