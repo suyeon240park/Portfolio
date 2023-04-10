@@ -47,14 +47,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .project {
-    width: 500px;
-    height: 400px;
-    margin: 100px;
-    text-align: center;
-    color: white;
-    transition: transform 0.3s ease;
-  }
   .project img {
     width: 100%;
     height: 100%;
@@ -78,6 +70,9 @@ body {
       width: 100%;
       height: auto;
       margin: 50px 0;
+      text-align: center;
+      color: white;
+      transition: transform 0.3s ease;
     }
   }
   
@@ -87,6 +82,9 @@ body {
       width: 500px;
       height: 400px;
       margin: 100px;
+      text-align: center;
+      color: white;
+      transition: transform 0.3s ease;
     }
   }
   
