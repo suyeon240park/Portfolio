@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_blank">
+    <meta charset="UTF-8" />
+    <title>About</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/project_style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.particleground.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+  </head>
+  <body class="fade-in">
+    <a href="index.html" class="back-link">&lt;</a>
+    <h1>About Me</h1>
+    <div class="intro">
+      <div class="intro-image-container">
+        <img src="assets/images/cat.jpg" alt="Cat portrait">
+      </div>
+      <div class="intro-text-container">
+        <h2>Introduction</h2>
+        <p>Hey there! My name is Suyeon Park, first-year TrackOne Engineering student at the University of Toronto with a deep passion for physics and computer science.</p>
+        <p>Throughout my academic journey, I have been fascinated by the ever-evolving world of technology, particularly in the field of artificial intelligence and machine learning. I have a decent understanding and experience in programming languages such as C, Python, JavaScript, and MATLAB, and I am constantly seeking to expand my knowledge and expertise in this area.</p>
+      </div>
+    </div>
+    <div class="intro">
+      <div class="intro-image-container">
+      </div>
+      <div class="intro-text-container">
+        <h2>Projects</h2>
+        <p>I have worked on various engineering and non-engineering projects, both individually and collaboratively. Toronto Health Datathon and Optimization of the Flow of Ambulatory Patients are one of the best experiences I had ever in my university life. Independently, I worked to create this fancy portfolio website (very fancy! isn't it?). Nowadays, I am developing an ML model that analyzes the Toronto Housing Market and predicts the profits from marketing the house. For more details on these projects, please refer to the "Projects" section in my portfolio.</p>
+      </div>
+    </div>
+    <div class="intro">
+      <div class="intro-image-container">
+      </div>
+      <div class="intro-text-container">
+        <h2>Persona</h2>
+        <p>In my free time, I enjoy reading books and exploring new knowledge. I like patting my little cat. I like to chat with ChatGPT and order it to put heart emoji next to every paragraph. I also love nature and enjoy hiking with my dearest ones. Interacting with them always gives me the strength to keep going on my journey through life.</p>
+      </div>
+    </div>
+    <div class="intro">
+      <div class="intro-image-container">
+      </div>
+      <div class="intro-text-container">
+        <h2>The End</h2>
+        <p>I am a hardworking individual with a keen eye for detail, passionate about learning new knowledge. I am confident that my skills and experience will make me a valuable asset to any team or organization.</p>
+        <p></p>
+        <p>Thanks for taking the time to read this!</p>
+        <p>Best luck for all of you.</p>
+      </div>
+    </div>
+    <script>
+      const link = document.querySelector('.back-link');
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        fade(href);
+      });
+
+      function fade(href) {
+        const body = document.querySelector('body');
+        body.classList.add('fade-out');
+        setTimeout(function() {
+          window.location.href = href;
+        }, 500);
+      }
+
+      const body = document.querySelector('body');
+      setTimeout(function() {
+        body.classList.remove('fade-in');
+      }, 500);
+    </script>
+  </body>
+</html>
+
