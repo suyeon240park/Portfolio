@@ -6,9 +6,11 @@ This project aims to create a new website for Suyeon Park Portfolio in 2023, wit
 
 <img src="assets/images/website.jpg"/>
 
-# Future Updates
+# Previous Updates
+- 2023.04.14 ~About page: introduction, personality, hobbies, skill sets, programming languages, and education~
+- 2023.04.16 ~Create a new menu section: Resume. Add a cat hover image for accessibility~
 
-- About page: introduction, personality, hobbies, skill sets, programming languages, and education
+# Future Updates
 - UI for phones and tablets
 - Language Support: automatic language detection based on the user's IP address and two language slots: English and Korean
 - Banner picture or decoration under each section(scrolling pic)
