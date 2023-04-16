@@ -78,12 +78,20 @@ body.fade-in {
   text-align: center;
 }
 #menu {
-  font-size: 25px;
+  font-size: 20px;
   position: absolute;
   left: 5%;
   top: 5%;
   text-align: left;
 }
+
+#menu .nav-link {
+  text-decoration: none;
+  margin: 30px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 h2 {
   text-transform: uppercase;
