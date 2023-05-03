@@ -44,13 +44,17 @@ filter: brightness(60%); /* reduce brightness on hover */
     font-size: 50px;
   }
   .projects {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
   }
+
   .project {
     width: 500px;
     height: 400px;
+    margin: 10%;
     text-align: center;
     color: white;
     transition: transform 0.3s ease;
@@ -145,9 +149,18 @@ filter: brightness(60%); /* reduce brightness on hover */
   }
   
 
+  
   @media (max-width: 768px) {
-    /* adjust font size for screens smaller than 768px */
-    .text-container {
-      font-size: 20pt;
+    /* adjust spacing for phone screens */
+    .section {
+      margin-bottom: 30px;
     }
   }
+  
+  @media (min-width: 769px) {
+    /* adjust spacing for computer screens */
+    .section {
+      margin-bottom: 50px;
+    }
+  }
+  
