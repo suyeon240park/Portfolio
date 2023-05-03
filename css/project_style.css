@@ -141,13 +141,14 @@ filter: brightness(60%); /* reduce brightness on hover */
     animation: bounce 1s ease-in-out infinite;
   }
 
-  @media screen and (max-width: 600px) {
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    h2 {
-      font-size: 1.5rem;
-      margin-top: 10px;
-    }
+@media only screen and (max-width: 768px) {
+  .project {
+    margin: 10%;
   }
+}
+
+@media only screen and (max-width: 480px) {
+  .project {
+    margin: 5%;
+  }
+}
