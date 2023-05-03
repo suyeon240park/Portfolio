@@ -149,18 +149,10 @@ filter: brightness(60%); /* reduce brightness on hover */
   }
   
 
-  
-  @media (max-width: 768px) {
-    /* adjust spacing for phone screens */
-    .section {
-      margin-bottom: 30px;
+@media (min-width:768px) {
+        .well {width:75%!important;
+                height:22%!important;
+        }
     }
-  }
-  
-  @media (min-width: 769px) {
-    /* adjust spacing for computer screens */
-    .section {
-      margin-bottom: 50px;
-    }
-  }
+
   
