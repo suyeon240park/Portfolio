@@ -44,21 +44,17 @@ filter: brightness(60%); /* reduce brightness on hover */
     font-size: 50px;
   }
   .projects {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    display: flex;
-    width: 100%;
-    margin-bottom: 50px;
   }
-
   .project {
     width: 500px;
     height: 400px;
-    margin: 10%;
+    margin: 100px;
     text-align: center;
     color: white;
     transition: transform 0.3s ease;
-    padding-top: 20px;
   }
   .project img {
     max-width: 100%;
@@ -66,9 +62,6 @@ filter: brightness(60%); /* reduce brightness on hover */
     height: 100%;
     object-fit: scale-down;
     border-radius: 5px;
-  }
-  .project h2 {
-    margin-top: 20px;
   }
   .project:hover {
     transform: scale(1.05);
@@ -148,11 +141,27 @@ filter: brightness(60%); /* reduce brightness on hover */
     animation: bounce 1s ease-in-out infinite;
   }
   
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+        
+}
 
-@media (min-width:768px) {
-        .well {width:75%!important;
-                height:22%!important;
-        }
-    }
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
 
-  
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
