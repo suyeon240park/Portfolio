@@ -1,88 +1,154 @@
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    <base target="_blank">
-    <meta charset="UTF-8" />
-    <title>Projects</title>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/project_style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery.particleground.js"></script>
-    <script type="text/javascript" src="js/demo.js"></script>
-  </head>
-  <body class="fade-in">
-    <a href="index.html" class="back-link">&lt;</a>
-    <h1>Projects</h1>
-    <div class="projects">
-      <div class="project">
-        <img src="assets/images/website.jpg" alt="Project 1" class="image">
-        <h2>Portfolio Website Development</h2>
-        <p>Interactive HTML website portfolio for showcasing my engineering skills and project experience to the world.</p>
-      </div>
-      <div class="project">
-        <img src="assets/images/datathon.jpg" alt="Project 2" class="image">
-        <h2>Toronto Health Datathon</h2>
-        <p>A hackathon implementing ML models to solve real-world medical problems facing the Canadian healthcare system.</p>
-      </div>
-      <div class="project">
-        <img src="assets/images/supply.jpg" alt="Project 3" class="image">
-        <h2>Optimization of the Flow of Ambulatory Patients</h2>
-        <p>Developing an efficient system to reduce patient wait times and optimize supply management in the Emergency Department of Sunnybrook Hospital.</p>
-      </div>
-      <div class="project">
-        <img src="assets/images/cloudAI.jpg" alt="Project 4" class="image">
-        <h2>Image Generation AI</h2>
-        <p>Use machine learning algorithms to create new and original images based on a dataset.</p>
-      </div>
-      <div class="project">
-        <img src="assets/images/reversi.jpg" alt="Project 5" class="image">
-        <h2>AI Reversi Player</h2>
-        <p>Train a game algorithm to effectively play the game of Reversi by implementing optimal strategies and decision-making processes based on game state inputs.</p>
-      </div>
-      <div class="project">
-        <img src="assets/images/environment.jpg" alt="Project 6" class="image">
-        <h2>EWB Community Partnerships Project</h2>
-        <p>Collaborate with local communities and Toronto government council to create sustainable solutions for environmental challenges.</p>
-      </div>
-      <div class="project">
-        <img src="assets/images/room.png" alt="Project 7" class="image">
-        <h2>Indie Game Development</h2>
-        <p>Develop a solo-playing video game written in Python with a focus on creating an engaging and immersive gaming experience for players.</p>
-      </div>
-      <div class="project">
-        <div class="image-container">
-          <img src="assets/images/Toronto.jpg" alt="Project 8" class="image">
-          <div class="text-container">
-            <p>TBA...</p>
-          </div>
-        </div>
-        <h2>Toronto Housing Market Analysis</h2>
-        <p>Develop a predictive model that analyzes the Toronto housing market and predicts the profitability of marketing a house using a Random Forest Algorithm.</p>
-      </div>
-    </div>
-    <script>
-      const link = document.querySelector('.back-link');
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const href = this.getAttribute('href');
-        fade(href);
-      });
+body {
+    opacity: 1;
+    transition: opacity 1s ease;
+    margin: 40px;
+    background: #000010;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+  }
 
-      function fade(href) {
-        const body = document.querySelector('body');
-        body.classList.add('fade-out');
-        setTimeout(function() {
-          window.location.href = href;
-        }, 500);
-      }
+  body.fade-out {
+    opacity: 0;
+  }
+  body.fade-in {
+    opacity: 0;
+  }
 
-      const body = document.querySelector('body');
-      setTimeout(function() {
-        body.classList.remove('fade-in');
-      }, 500);
-    </script>
-  </body>
-</html>
+  .image {
+    transition: filter 0.5s;
+    width: 100%; /* make the image width 100% */
+  }
+  
+  .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw; /* use a percentage font size */
+  }
+
+.image:hover {
+filter: brightness(60%); /* reduce brightness on hover */
+}
+
+.image-container {
+    position: relative;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .project {
+    width: 500px;
+    height: 400px;
+    margin: 10%;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+    padding-top: 20px;
+  }
+  .project img {
+    max-width: 100%;
+    min-width: 300px;
+    height: 100%;
+    object-fit: scale-down;
+    border-radius: 5px;
+  }
+  .project h2 {
+    margin-top: 20px;
+  }
+  .project:hover {
+    transform: scale(1.05);
+  }
+  .back-link {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .intro{
+    margin: 100px;
+    text-align: left;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .intro-image-container {
+    width: 30%; /* adjust as needed */
+  }
+  
+  .intro-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .intro-text-container {
+    width: 70%;
+    padding-left: 40px;
+  }
+  
+
+  
+  .intro-text-container h2 {
+    font-size: 3vw; /* use a percentage font size */
+  }
+  
+  .intro-text-container p {
+    font-size: 2vw; /* use a percentage font size */
+    line-height: 1.5;
+  }
+  
+
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .fa-bounce {
+    animation: bounce 1s ease-in-out infinite;
+  }
+  
+
+  @media (max-width: 768px) {
+    /* adjust font size for screens smaller than 768px */
+    .text-container {
+      font-size: 20pt;
+    }
+  }
