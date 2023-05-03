@@ -49,8 +49,8 @@ filter: brightness(60%); /* reduce brightness on hover */
     justify-content: center;
   }
   .project {
-    width: 40%;
-    height: 40%;
+    width: 500px;
+    height: 600px;
     margin: 10%;
     text-align: center;
     color: white;
