@@ -40,21 +40,21 @@ filter: brightness(60%); /* reduce brightness on hover */
   h1 {
     color: white;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10%;
     font-size: 50px;
   }
   .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+    color: white;
   }
   .project {
     width: 500px;
     height: 400px;
-    margin: 100px;
-    text-align: center;
-    color: white;
     transition: transform 0.3s ease;
+    margin: 20%;
   }
   .project img {
     max-width: 100%;
