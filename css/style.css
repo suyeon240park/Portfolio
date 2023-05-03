@@ -117,7 +117,8 @@ p {
 
 @media (max-width: 768px) {
   menu {
-    font-size: 10px;
+    font-size: 5px;
+    margin-top: 5px;
   }
   h2 {
     font-size: 30px;
