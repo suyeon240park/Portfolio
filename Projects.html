@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <base target="_blank">
+    <meta charset="UTF-8" />
+    <title>Experience</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/project_style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body class="fade-in">
+    <a href="index.html" class="back-link">&lt;</a>
+    <h1>Projects</h1>
+    <div class="des">
+      <div class="projects">
+        <div class="project">
+          <p>Jan 2023</p>
+          <h3>Personal Project</h3>
+          <img src="assets/images/website.jpg" alt="Project 2" class="image">
+          <br></br>
+          <h2>Portfolio Website Development</h2>
+          <p>Interactive HTML website portfolio for showcasing my engineering skills and project experience to the world.</p>
+        </div>
+        <div class="project">
+          <p>Jan - Apr 2023</p>
+          <h3>University of Toronto</h3>
+          <img src="assets/images/supply.jpg" alt="Project 4" class="image">
+          <h2>Optimization of the Flow of Ambulatory Patients</h2>
+          <p>Developing an efficient system to reduce patient wait times and optimize supply management in the Emergency Department of Sunnybrook Hospital.</p>
+        </div>
+        <div class="project">
+          <p>Jan - Apr 2023</p>
+          <h3>University of Toronto</h3>
+          <img src="assets/images/reversi.jpg" alt="Project 5" class="image">
+          <h2>AI Reversi Player</h2>
+          <p>Train a game algorithm to effectively play the game of Reversi by implementing optimal strategies and decision-making processes based on game state inputs.</p>
+        </div>
+        <div class="project">
+          <p>Jan - Apr 2023</p>
+          <h3>Engineers Without Borders</h3>
+          <img src="assets/images/environment.jpg" alt="Project 6" class="image">
+          <h2>EWB Community Partnerships Project</h2>
+          <p>Collaborate with local communities and the Toronto government council to create sustainable solutions for environmental challenges.</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      const link = document.querySelector('.back-link');
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        fade(href);
+      });
+
+      function fade(href) {
+        const body = document.querySelector('body');
+        body.classList.add('fade-out');
+        setTimeout(function() {
+          window.location.href = href;
+        }, 500);
+      }
+
+      const body = document.querySelector('body');
+      setTimeout(function() {
+        body.classList.remove('fade-in');
+      }, 500);
+    </script>
+  </body>
+</html>
