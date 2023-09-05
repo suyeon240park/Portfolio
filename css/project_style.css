@@ -180,3 +180,35 @@ date {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
 }
+
+/* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Parallax Styles */
+.parallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallax-background {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(0.7); /* Adjust brightness as needed */
+}
+
+.parallax-title {
+  text-align: center;
+  padding-top: 20vh; /* Adjust this value to vertically center the title */
+  font-size: 24px;
+  color: #fff;
+  position: relative;
+}
