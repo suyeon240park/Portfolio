@@ -20,12 +20,20 @@ body {
   }
   
   .background {
+    transform: translateZ(-10px) scale(2);
+  }
+  
+  .foreground {
+    transform: translateZ(-5px) scale(1.5);
+  }
+  
+  .background,
+  .foreground {
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
     z-index: -1;
-    transform: translateZ(-10px) scale(2);
   }
   
   .title {
