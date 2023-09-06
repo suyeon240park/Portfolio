@@ -181,13 +181,6 @@ date {
   font-weight: 300;
 }
 
-/* Reset some default styles */
-body {
-  margin: 0;
-  padding: 0;
-}
-
-/* Parallax Styles */
 .parallax {
   position: relative;
   width: 100%;
