@@ -1,7 +1,7 @@
 body {
   opacity: 1;
   transition: opacity 1s ease;
-  margin: 40px;
+  margin: 0;
   background: #000010;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
@@ -9,24 +9,44 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.background {
-  position: relative;
-  text-align: center;
-  color: white;
-  height: 100px;
-  width: 100%;
-  display: block;
-  overflow: scroll;
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
 }
 
-h1 {
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 90px;
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.background {
+  transform: translateZ(-10px) scale(2);
+}
+
+.foreground {
+  transform: translateZ(-5px) translateX(-600px) translateY(100px) scale(0.8);
+}
+
+.background,
+.foreground {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.title {
+  font-size: 7rem;
+  color: white;
+  text-shadow: 0 0 10px black;
 }
 
 body.fade-out {
@@ -37,28 +57,8 @@ body.fade-in {
   opacity: 0;
 }
 
-.image {
-  transition: filter 0.5s;
-  width: 100%;
-  /* make the image width 100% */
-}
-
-.text-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3vw;
-  /* use a percentage font size */
-}
-
 .image:hover {
   filter: brightness(60%);
-  /* reduce brightness on hover */
-}
-
-.image-container {
-  position: relative;
 }
 
 .projects {
@@ -67,6 +67,8 @@ body.fade-in {
   justify-content: center;
   text-align: center;
   color: white;
+  padding: 2rem;
+  background-color: #0f121c;
 }
 
 .project {
@@ -78,10 +80,12 @@ body.fade-in {
 }
 
 .project img {
-  width: 100%;
-  height: auto;
-  object-fit: scale-down;
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
   border-radius: 5px;
+  transition: filter 0.5s;
+  width: 100%;
 }
 
 .project:hover {
@@ -95,27 +99,18 @@ body.fade-in {
   font-size: 36px;
   color: white;
   text-decoration: none;
-}
-
-.intro {
-  margin: 100px;
-  text-align: left;
-  color: white;
-  transition: transform 0.3s ease;
+  z-index: 1;
+  text-shadow: 0 0 10px black;
 }
 
 .project h2 {
-  text-align: center;
   font-size: 30px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  margin-top: 50px;
-  margin-bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
-
-  /* reduce font size for screens smaller than 768px wide */
   .project h1 {
     margin-top: 30%;
     font-size: 40px;
@@ -129,54 +124,4 @@ body.fade-in {
   .project {
     margin: 10%;
   }
-}
-
-.intro-image-container {
-  width: 30%;
-  /* adjust as needed */
-}
-
-.intro-image-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-}
-
-.intro-text-container {
-  width: 70%;
-  padding-left: 40px;
-}
-
-.intro-text-container h2 {
-  font-size: 3vw;
-  /* use a percentage font size */
-}
-
-.intro-text-container p {
-  font-size: 2vw;
-  /* use a percentage font size */
-  line-height: 1.5;
-}
-
-p {
-  font-family: 'Montserrat', sans-serif;
-  padding: 10px;
-}
-
-date {
-  text-align: center;
-  font-size: 20px;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
-}
-
-h2 {
-  margin: 50px;
-}
-
-.des-image {
-  border-radius: 20px;
-  max-width: 60%;
-  height: auto;
 }

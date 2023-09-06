@@ -1,59 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-<head>
-    <base target="_blank">
-    <meta charset="UTF-8" />
-    <title>Projects</title>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/project_style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-</head>
-<body class="fade-in">
+  <head>
+      <base target="_blank">
+      <meta charset="UTF-8" />
+      <title>Projects</title>
+      <meta charset="UTF-8">
+      <link rel="icon" type="image/png" href="assets/favicon.png">
+      <link rel="stylesheet" href="css/project_style.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body class="fade-in">
     <a href="index.html" class="back-link">&lt;</a>
-    <div class="background">
-      <img src="assets/images/forest.jpg" alt="background">
-      <h1>Work Experience</h1>
-    </div>
-    <div class="projects">
-      <div class="project">
-        <p>May - Aug 2023</p>
-        <h3>Ministry of Transportation of Ontario</h3>
-        <a href="IT_Project_Assistant.html" target="_blank">
-          <img src="assets/images/government.jpg" alt="Work 1" class="image">
-        </a>
-        <h2>IT Project Assistant</h2>
-        <p>Optimizing government websites, myEOIS, and developing an AI-based resume sorting system.</p>
+    <div class="wrapper">
+      <header>
+        <img src="assets/images/forest.jpg" class="background">
+        <img src="assets/images/programming.png" class="foreground">
+        <h1 class="title">Career History</h1>
+      </header>
+      <div class="projects">
+        <div class="project">
+          <p>May - Aug 2023</p>
+          <h3>Ministry of Transportation of Ontario</h3>
+          <a href="IT_Project_Assistant.html" target="_blank">
+            <img src="assets/images/government.jpg" alt="Work 1" class="image">
+          </a>
+          <h2>IT Project Assistant</h2>
+          <p>Optimizing government websites, myEOIS, and developing an AI-based resume sorting system.</p>
+        </div>
+        <div class="project">
+          <p>Feb 2020 - Apr 2022</p>
+          <h3>St. Francis Secondary School</h3>
+          <img src="assets/images/tutor.jpg" alt="Work 1" class="image">
+          <h2>Private Tutor / Tutoring volunteer</h2>
+          <p>Teaching high school students gr10 English, gr12 Math, and OSSLT preparation.</p>
+        </div>
       </div>
-      <div class="project">
-        <p>Feb 2020 - Apr 2022</p>
-        <h3>St. Francis Secondary School</h3>
-        <img src="assets/images/tutor.jpg" alt="Work 1" class="image">
-        <h2>Private Tutor / Tutoring volunteer</h2>
-        <p>Teaching high school students gr10 English, gr12 Math, and OSSLT preparation.</p>
-      </div>
     </div>
-    <script>
-      const link = document.querySelector('.back-link');
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const href = this.getAttribute('href');
-        fade(href);
-      });
-
-      function fade(href) {
-        const body = document.querySelector('body');
-        body.classList.add('fade-out');
-        setTimeout(function() {
-          window.location.href = href;
-        }, 500);
-      }
-
-      const body = document.querySelector('body');
-      setTimeout(function() {
-        body.classList.remove('fade-in');
-      }, 500);
-    </script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
