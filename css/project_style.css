@@ -21,7 +21,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 50vh;
   transform-style: preserve-3d;
   z-index: -1;
 }
