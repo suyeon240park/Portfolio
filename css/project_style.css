@@ -13,8 +13,10 @@ body {
   position: relative;
   text-align: center;
   color: white;
-  height: 200px;
+  height: 100px;
   width: 100%;
+  display: block;
+  overflow: scroll;
 }
 
 h1 {
