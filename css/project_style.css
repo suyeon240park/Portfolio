@@ -37,12 +37,11 @@ body.fade-in {
   opacity: 0;
 }
 
-.image {
-  transition: filter 0.5s;
-  width: 100%;
-  /* make the image width 100% */
+img {
+  display: block; /* Remove default inline spacing */
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
 }
-
 .text-container {
   position: absolute;
   top: 50%;
@@ -58,9 +57,14 @@ body.fade-in {
 }
 
 .image-container {
-  position: relative;
+  position: fixed; /* Fixed position to keep it in place */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the container */
+  border: 10px solid #000; /* Define the frame's style */
+  padding: 20px; /* Adjust padding as needed */
+  background-color: #fff; /* Background color for the frame */
 }
-
 .projects {
   display: flex;
   flex-wrap: wrap;
