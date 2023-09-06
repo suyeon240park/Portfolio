@@ -1,9 +1,3 @@
-header {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
 body {
   opacity: 1;
   transition: opacity 1s ease;
