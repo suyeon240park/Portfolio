@@ -176,8 +176,8 @@ h2 {
 }
 
 .des-image {
-  border-radius: 20px; /* Adjust the border-radius as needed for the desired roundness */
-  max-width: 70%; /* Make the container fit the page width */
-  height: auto; /* Maintain aspect ratio */
-  overflow: hidden; /* Hide any content that overflows the rounded container */
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
 }
