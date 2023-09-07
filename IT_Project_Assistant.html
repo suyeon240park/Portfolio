@@ -1,59 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
   <head>
     <base target="_blank">
     <meta charset="UTF-8" />
-    <title>IT_Project_Assistant</title>
+    <title>Projects</title>
+    <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/project_style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+      body {
+        opacity: 1;
+        transition: opacity 1s ease;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        line-height: 2.0;
+      }
+
+      .wrapper {
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        perspective: 10px;
+      }
+
+      header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 50vh;
+        transform-style: preserve-3d;
+        z-index: -1;
+      }
+
+      .background {
+        transform: translateZ(-10px) scale(2);
+      }
+
+      .foreground {
+        transform: translateZ(-5px) translateX(-600px) translateY(100px) scale(0.8);
+      }
+
+      .background,
+      .foreground {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      .title {
+        font-size: 6rem;
+        color: white;
+        text-shadow: 0 0 10px black;
+      }
+
+      .organization {
+        font-size: 25px;
+        color: white;
+        text-shadow: 0 0 5px black;
+        margin-bottom: -100px;
+      }
+
+      body.fade-out {
+        opacity: 0;
+      }
+
+      body.fade-in {
+        opacity: 0;
+      }
+
+      .back-link {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        font-size: 36px;
+        color: white;
+        text-decoration: none;
+        z-index: 1;
+        text-shadow: 0 0 10px black;
+      }
+
+      .section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left;
+        padding: 2rem;
+        background-color: #0f121c;
+      }
+
+      .section img {
+        max-width: 60%;
+        margin: 10px;
+        border-radius: 10px;
+        margin-bottom: 60px;
+      }
+
+      p {
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+
+      h1 {
+        margin-top: 100px;
+      }
+
+      .side-by-side-img {
+        display: flex;
+        justify-content: center;
+      }
+
+      .link a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body class="fade-in">
-    <a href="index.html" class="back-link">&lt;</a>
+    <a href="Work.html" class="back-link">&lt;</a>
     <div class="wrapper">
       <header>
         <img src="assets/images/forest.jpg" class="background">
         <img src="assets/images/programming.png" class="foreground">
+        <h1 class="organization">Ontario Ministry of Transportation</h1>
         <h1 class="title">IT Project Assistant</h1>
       </header>
-      <h1>IT Project Assistant</h1>
-      <h2>1. MyEOIS Website Enhancement</h2>
-      <p>During my summer internship as an IT Project Assistant at the Ontario Ministry of Transportation, I played a role in managing and enhancing the The Employment Ontario Information System (MyEOIS) government website, which is responsible for supporting the administration of Employment Ontario programs and services.
-          
-          I actively engaged with the existing codebase, closely observing and analyzing the PHP and JavaScript code. This not only expanded my technical knowledge but also provided me with fresh perspectives on efficient coding practices.
-          
-          One of my key responsibilities was to identify and resolve errors or bugs within the website. Additionally, I undertook the task of developing new functionalities, such as the "Add more files" and "Select Agents" features, seamlessly integrating them into the existing codebase. This hands-on experience enabled me to fine-tune my coding skills while contributing to the site's overall usability.
-
-          One of the distinctive aspects of my role was my involvement in regular meetings, where I reported on the issues I had resolved and the enhancements I had implemented. These meetings occurred twice a week, providing an opportunity for me to communicate my progress to the team effectively and ensure transparency in the development process. This reporting process not only enhanced team collaboration but also facilitated effective tracking of project milestones.
-
-          After reviewing, I diligently transferred tickets to other agents for review, ensuring that each issue was thoroughly examined and fully resolved. This collaborative approach to ticket management allowed for an efficient resolution process, minimizing delays and maximizing productivity.
-          
-          One notable challenge I encountered during this process was the initial difficulty in running a heavy platform, Docker Engine. Understanding the workflow, working within a local environment, and successfully pushing changes to the staging environment posed a steep learning curve. Moreover, I encountered numerous new terminologies in the workspace that I had not encountered in my educational background.
-          
-          To overcome these challenges, I proactively sought assistance from my senior colleagues and peers. I was not afraid to ask for help and actively engaged in researching and learning the intricacies of programming within the workplace. This commitment allowed me to conquer these hurdles and further develop my skills, ultimately contributing to the success of the MyEOIS website project.  This role allowed me to gain invaluable insights into web development, teamwork, and communication.</p>
-      <div class="des-image">
+      <div class="section">
+        <h1>1. MyEOIS Website Enhancement</h1>
+        <p>During my summer internship as an IT Project Assistant, I played a role in managing and enhancing the The Employment Ontario Information System (MyEOIS) government website, which is responsible for supporting the administration of Employment Ontario programs and services.</p>
+        <p>I actively engaged with the existing codebase, closely observing and analyzing the PHP and JavaScript code. This not only expanded my technical knowledge but also provided me with fresh perspectives on efficient coding practices.</p>
+        <div class="side-by-side-img" style="width: 400px;">
+          <img src="assets/images/php.png">
+          <img src="assets/images/JavaScript.png">
+        </div>
+        <p>One of my key responsibilities was to identify and resolve errors or bugs within the website. Additionally, I undertook the task of developing new functionalities, such as the "Add more files" and "Select Agents" features, integrating them into the existing codebase. This hands-on experience enabled me to fine-tune my coding skills while contributing to the site's overall usability.</p>
+        <p>One of the distinctive aspects of my role was my involvement in meetings, where I reported on the issues I had resolved. These meetings occurred twice a week, providing an opportunity for me to communicate my progress to the team effectively and ensure transparency in the development process. This reporting process taught me a sense of teamwork and effective communication skills in workplace.</p>
+        <p>After reviewing, I transferred support tickets to other agents for review, ensuring that each issue was thoroughly examined and fully resolved. This collaborative approach to ticket management allowed for an efficient resolution process. Initially, I perceived this method as being less efficient and rather slow. however, I subsequently came to realize that precision holds greater significance than speed within governmental contexts.</p>
         <img src="assets/images/myEOIS.png">
-      </div>
-      <h2>2. AI-Based Resume Sorting System</h2>
-      <p>A significant highlight of my role was the development of a cutting-edge AI-based resume sorting system to create a sophisticated tool that would revolutionize the recruitment process.</p>
+        <p>One notable challenge I encountered during this process was the initial difficulty in understanding the overall workflow, such as working within a local environment and pushing changes to the staging environment. Moreover, I encountered numerous new terminologies in the workspace that I had not encountered in my educational background.</p>
+        <p>To overcome this challenge, I proactively sought assistance from my senior colleagues and peers. I was not afraid to ask for help and actively engaged in researching and learning the intricacies of programming within the workplace. This commitment allowed me to further develop my communication and technical skills, ultimately contributing to the success of the MyEOIS website project.</p>
 
-      <p>One of the key milestones of this project was the deployment of a dedicated website that hosted the resume sorting AI as its backend. This strategic decision allowed us to streamline recruitment procedures and significantly enhance the evaluation of candidates. To achieve this, I utilized a combination of React and Vita, carefully crafting a user-friendly and efficient interface that complemented the power of the AI-driven sorting system.</p>
+        <h1>2. AI-Based Resume Sorting System</h1>
+        <p>Within a team of summer interns, I contributed to the development of an AI-driven resume sorting system, aimed at enhancing the recruitment process at the Ontario Ministry of Transportation (MTO).</p>
+
+        <p>The project followed a structured workflow with the following stages:</p>
+
+        <p>1. <strong>Ideation and Planning:</strong> We initiated the project by brainstorming its objectives and potential strategies. This phase included a comprehensive exploration of AI models, services, and platforms suitable for achieving our goals. Notably, we chose to employ a Convolutional Neural Network (CNN) model for training, considering its strength in text and document processing. Reflecting on the project, I now believe that Transformer-based models such as BERT or GPT would be more suitable for matching textual data in NLP tasks (ATTENION IS ALL YOU NEED!!!).</p>
+        <img src="assets/images/CNN.png">
+        <p>2. <strong>Presentation to Stakeholders:</strong> We presented our project proposal, outlining the objectives, strategies, and technological choices to our supervisors. This presentation served as a critical step in understanding the needs of the recruitment managers.</p>
+        <div class="side-by-side-img" style="width: 800px;">
+          <img src="assets/images/presentation1.png">
+          <img src="assets/images/presentation2.png">
+        </div>
+        <p>3. <strong>Prototyping:</strong> Our team embarked on the development of both the frontend and backend of the project. The backend team crafted a prototype of the ML model using Python and TensorFlow. However, the accuracy of the model was initially quite low due to the limited amount of resume datasets available. The image below is a screenshot of the Figma prototype of the frontend.</p>
+        <img src="assets/images/figma.png">
+        <p>4. <strong>Development:</strong> The development phase encompassed the detailed implementation of both frontend and backend components. Key to our project's success was the creation of an user-friendly interface, which integrated the AI-driven sorting system, a search engine, and database functionalities. I utilized a combination of React + Vite in my local environment to run a faster development server.</p>
+
+        <p>During development, one of our primary challenges was selecting the most appropriate technologies and services for deploying the website. As we initially focused on local development, deployment considerations had not been thoroughly explored. We evaluated multiple options, including Google Firebase, GitHub, SQL, SQLite, MongoDB, and more. Each offered distinct advantages and limitations. It was imperative to ensure that the chosen platform aligned with our project's budget and supported the necessary dependencies or APIs.</p>
+
+        <p>Addressing this challenge demanded a blend of technical expertise and effective team communication. After discussion and research, we selected Netlify as the most suitable platform for website deployment.</p>
+
+        <p class="link">To access the website, please click <a href="https://resumeml.netlify.app/">here</a>.</p>
         
-      <p>However, this endeavor was not without its challenges. One of the primary obstacles we faced was the selection of the right technologies and services for deployment. Our team extensively considered various options, including Google Firebase, GitHub, and more. Each platform presented its unique set of advantages and limitations, and it was crucial to ensure that our chosen platform supported the necessary dependencies and databases.</p>
-        
-      <p>Overcoming this challenge required a blend of technical expertise and effective communication within the team. As my experience in web development, AI, and database management grew, I became increasingly proficient in making informed decisions about technology selection. Ultimately, after careful consideration and collaborative discussions with team members, we settled on Netlify as the ideal platform to deploy the website and the resume sorting AI. This decision streamlined our development process and ensured the seamless operation of the system.</p>
-        
-      <p>The successful implementation of the AI-Based Resume Sorting System not only demonstrated my technical prowess but also highlighted my ability to navigate complex technological choices through teamwork and the guidance of senior colleagues. This project stands as a testament to our commitment to innovation and efficiency within the Ministry of Transportation.</p>
-      <div class="des-image">
         <img src="assets/images/resume_website.png">
-      </div>
-      <h2>3. IAST Logo Design Contest</h2>
-      <p>logo~~~</p>
-      <div class="des-image">
-        <img src="assets/images/logo.png">
+
+        <p class="link">To access the GitHub repository for this project, please click <a href="https://github.com/LTCinterns2023/resumeML">here</a>.</p>
+
+        <p>5. <strong>Showcasing and Validation:</strong> After completing the development phase, we presented the final product to our supervisors for validation and feedback.</p>
+
+        <p>6. <strong>Documentation:</strong> As a concluding step, our team documented our project's purpose, methodology, and technical details. This documentation included insights for future interns to build upon our work and suggestions for further development.</p>
+
+        <p>This project offered a unique opportunity to develop both frontend and backend components, providing me with a comprehensive understanding of project management from a technical perspective. I learned the importance of communication and teamwork when it comes to the success of the project. </p>
+        
+        <h1>3. IAST Logo Design Contest</h1>
+        <p>I participated the IAST (Integrated Application Support Team) Logo Design Contest. My goal was to create a logo that reflected the essence of IAST team. I designed the logo in Photoshop and created an introductory video, aiming for a clean and impactful visual representation. As a result of my efforts, my design won the contest.</p>
+        <p class="link">To watch the introductory video, please click <a href="https://www.youtube.com/watch?v=MA01ss-qW74">here</a>.</p>
+        <img src="assets/images/IAST_logo.png" style="width: 400px">
       </div>
     </div>
     <script src="script.js"></script>
   </body>
 </html>
+
