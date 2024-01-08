@@ -1,6 +1,6 @@
 # Suyeon Park Portfolio
 
-This project aims to create a new website for Suyeon Park Portfolio in 2023, with the objective of showcasing my engineering skills and relevant work experience in an engaging and user-interactive way using JavaScript.
+This project aims to create a new website for Suyeon Park Portfolio in 2023, to showcase my engineering skills and relevant work experience in an engaging and user-interactive way using JavaScript.
 
 > https://suyeon240park.github.io/Portfolio/
 
