@@ -11,6 +11,7 @@ body {
 
   .section {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     text-align: left;
     justify-content: center;
@@ -19,18 +20,15 @@ body {
   }
 
   .section img {
-    max-width: 60%;
+    width: 100%;
+    max-width: 400px;
     margin: 10px;
     border-radius: 10px;
-    margin-bottom: 60px;
   }
 
   p {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 1rem 2rem;
     text-align: left;
-    justify-content: left;
-    align: left;
   }
 
   h1 {
