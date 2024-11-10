@@ -24,8 +24,7 @@ body {
 .project img {
   width: 100%;
   max-width: 500px;
-  height: 300px; /* Set a fixed height for uniform frames */
-  object-fit: cover; /* Ensures images are cropped to fit */
+  object-fit: cover;
   border-radius: 5px;
   transition: filter 0.5s;
 }
