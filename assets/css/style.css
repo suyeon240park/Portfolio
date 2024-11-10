@@ -117,10 +117,13 @@ p {
 
 @media (max-width: 768px) {
   menu {
-    font-size: 5px;
-    margin-top: 5px;
+    font-size: 4px;
+    top: 10%;
+    right: 5%;
+    padding: 10px 0;
+    text-algin: center;
   }
   h2 {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
