@@ -25,28 +25,34 @@ header {
   overflow: hidden;
   transform-style: preserve-3d;
   z-index: -1;
+  clip-path: inset(0 0 0 0); /* Crop any overflow */
 }
 
-.background,
-.foreground-exp,
-.foreground-work {
+.background {
+  transform: translateZ(-10px) scale(2.0);
   position: absolute;
-  height: 50vh;
+  height: 100vh; /* Keep the tall height for scrolling */
   width: 100vw;
   object-fit: cover;
   z-index: -1;
 }
 
-.background {
-  transform: translateZ(-10px) scale(2.0);
+.foreground-exp,
+.foreground-work {
+  transform: translateZ(-5px) scale(0.8);
+  position: absolute;
+  height: 100vh; /* Keep the tall height for scrolling */
+  width: 100vw;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .foreground-exp {
-  transform: translateZ(-5px) translateX(600px) translateY(-100px) scale(1.0);
+  translate: 600px -100px;
 }
 
 .foreground-work {
-  transform: translateZ(-5px) translateX(-600px) translateY(100px) scale(0.8);
+  translate: -600px 100px;
 }
 
 .title {
