@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
   perspective: 10px;
 }
-  
+
 header {
   position: relative;
   display: flex;
@@ -42,7 +42,7 @@ header {
 .foreground-exp,
 .foreground-work {
   position: absolute;
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   object-fit: cover;
   z-index: -1;
@@ -52,7 +52,6 @@ header {
   font-size: 6rem;
   color: white;
   text-shadow: 0 0 10px black;
-  z-index: 2;
 }
 
 body.fade-out {
