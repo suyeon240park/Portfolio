@@ -92,14 +92,13 @@ body.fade-in {
   font-family: 'Montserrat', sans-serif;
 }
 
-
 h2 {
   text-transform: uppercase;
   font-size: 50px;
   font-weight: 120;
   color: #ffffff;
   letter-spacing: 0.05em;
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 h1::after {
   content: '';
@@ -116,12 +115,4 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-@media (max-width: 768px) {
-  #menu {
-    right: 0%;
-    top: 0%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-}
+
