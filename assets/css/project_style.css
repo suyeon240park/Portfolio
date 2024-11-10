@@ -86,12 +86,12 @@ body.fade-in {
   width: calc(50% - 1rem); /* Half width on desktop */
   max-width: 500px;
   flex: 1 1 45%;
-  margin: 1rem;
+  margin: 2rem;
   transition: transform 0.3s ease;
   text-align: left; /* Left-aligned text */
   background-color: #1a1d2b;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .project img {
