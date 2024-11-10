@@ -99,6 +99,7 @@ h2 {
   font-weight: 120;
   color: #ffffff;
   letter-spacing: 0.05em;
+  margin-bottom: 10px;
 }
 h1::after {
   content: '';
