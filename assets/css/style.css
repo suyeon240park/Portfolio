@@ -80,9 +80,9 @@ body.fade-in {
 #menu {
   font-size: 20px;
   position: absolute;
-  left: 5%;
+  right: 5%;
   top: 5%;
-  text-align: left;
+  text-align: right;
 }
 
 #menu .nav-link {
