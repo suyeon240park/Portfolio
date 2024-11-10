@@ -23,7 +23,7 @@ header {
   align-items: center;
   height: 50vh;
   transform-style: preserve-3d;
-  overflow: hidden;
+  clip-path: inset(0 0 0 0);
   z-index: -1;
 }
 
@@ -131,6 +131,6 @@ body.fade-in {
   }
 
   .project img {
-    height: 200px; /* Smaller frame for mobile */
+    height: 200px;
   }
 }
