@@ -41,7 +41,7 @@ body {
   .foreground-exp,
   .foreground-work {
     position: absolute;
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     object-fit: cover;
     z-index: -1;
