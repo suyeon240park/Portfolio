@@ -24,7 +24,6 @@ header {
   height: 50vh;
   transform-style: preserve-3d;
   z-index: -1;
-  overflow: hidden;
 }
 
 .background {
