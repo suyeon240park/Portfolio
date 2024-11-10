@@ -6,6 +6,74 @@ body {
   color: white;
 }
 
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh; /* Reduced height to avoid overlap with projects */
+  transform-style: preserve-3d;
+  z-index: 1;
+  padding: 2rem; /* Added some padding to give breathing room */
+}
+
+.background {
+  transform: translateZ(-10px) scale(1.5); /* Reduced scale */
+}
+
+.foreground-exp {
+  transform: translateZ(-5px) translateX(200px) translateY(-50px) scale(0.9); /* Reduced size and positioning */
+}
+
+.foreground-work {
+  transform: translateZ(-5px) translateX(-200px) translateY(50px) scale(0.8);
+}
+
+.background,
+.foreground-exp,
+.foreground-work {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.title {
+  font-size: 3rem; /* Smaller title size */
+  text-shadow: 0 0 10px black;
+  z-index: 2; /* Ensure the title stays above the images */
+  padding: 1rem;
+  text-align: center;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+body.fade-in {
+  opacity: 0;
+}
+
+.back-link {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-size: 36px;
+  color: white;
+  text-decoration: none;
+  z-index: 1;
+  text-shadow: 0 0 10px black;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -50,74 +118,30 @@ body {
 .image:hover {
   filter: brightness(60%);
 }
-  
-.wrapper {
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  perspective: 10px;
-}
-  
-header {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 50vh;
-  transform-style: preserve-3d;
-  z-index: -1;
-}
-
-.background {
-  transform: translateZ(-10px) scale(2.0);
-}
-
-.foreground-exp {
-  transform: translateZ(-5px) translateX(600px) translateY(-100px) scale(1.0);
-}
-
-.foreground-work {
-  transform: translateZ(-5px) translateX(-600px) translateY(100px) scale(0.8);
-}
-
-.background,
-.foreground-exp,
-.foreground-work {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.title {
-  font-size: 6rem;
-  color: white;
-  text-shadow: 0 0 10px black;
-}
-
-body.fade-out {
-  opacity: 0;
-}
-
-body.fade-in {
-  opacity: 0;
-}
-
-.back-link {
-  position: absolute;
-  top: 30px;
-  left: 40px;
-  font-size: 36px;
-  color: white;
-  text-decoration: none;
-  z-index: 1;
-  text-shadow: 0 0 10px black;
-}
 
 /* Responsive Design for Mobile View */
 @media (max-width: 768px) {
+  header {
+    height: 60vh; /* Increase height for mobile screens for better fit */
+  }
+
+  .background {
+    transform: translateZ(-8px) scale(1.2); /* Adjust background size */
+  }
+
+  .foreground-exp {
+    transform: translateZ(-4px) translateX(0) translateY(-30px) scale(1); /* Center and scale the foreground */
+  }
+
+  .foreground-work {
+    transform: translateZ(-4px) translateX(0) translateY(30px) scale(0.9); /* Adjust foreground for mobile */
+  }
+
+  .title {
+    font-size: 2rem; /* Smaller title size for mobile */
+    padding: 0.5rem;
+  }
+  
   .project {
     width: 100%; /* Full width for single-column layout */
     margin: 1rem 0;
