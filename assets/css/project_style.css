@@ -23,7 +23,6 @@ header {
   align-items: center;
   height: 50vh;
   transform-style: preserve-3d;
-  clip-path: inset(0 0 0 0);
   z-index: -1;
 }
 
