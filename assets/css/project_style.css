@@ -31,7 +31,7 @@ header {
 }
 
 .foreground-exp {
-  transform: translateZ(-5px) translateX(600px) translateY(-100px) scale(1.0);
+  transform: translateZ(-50px) translateX(600px) translateY(-100px) scale(1.0);
 }
 
 .foreground-work {
