@@ -90,7 +90,7 @@ body.fade-in {
   text-align: left; /* Left-aligned text */
   background-color: #1a1d2b;
   border-radius: 8px;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .project img {
@@ -123,7 +123,6 @@ body.fade-in {
   .project {
     width: 100%;
     margin: 1rem 0;
-    padding: 1rem;
   }
 
   .project h2 {
