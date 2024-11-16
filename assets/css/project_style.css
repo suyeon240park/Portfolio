@@ -51,7 +51,7 @@ header {
 }
 
 .title {
-  font-size: 6vw;
+  font-size: calc(4rem + 5vw);
   color: white;
   text-shadow: 0 0 10px black;
   z-index: 1;
