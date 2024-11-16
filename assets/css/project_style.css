@@ -135,4 +135,8 @@ body.fade-in {
   .project img {
     height: 200px;
   }
+  
+  .title {
+  font-size: 8vw;
+  }
 }
