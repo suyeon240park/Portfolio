@@ -10,14 +10,12 @@ This project aims to create a new website for Suyeon Park Portfolio in 2023, to 
 - 2023.04.14 ~About page: introduction, personality, hobbies, skill sets, programming languages, and education~
 - 2023.04.16 ~Create a new menu section: Resume~
 - 2023.06.22 ~Change the address in the resume~
+- 2023.12.01 ~Banner picture and scrolling effect~
+- 2024.11.16 ~Responsive designs for phones and tablets~
 
 # Future Updates
-- UI for phones and tablets
-- Language Support: automatic language detection based on the user's IP address and two language slots: English and Korean
-- Banner picture or decoration under each section(scrolling pic)
-- Projects: each project will redirect to another page, further explaining the purpose, objective, detailed process, conclusion, and reflection.
-- Copyright section
-
+- N/A
+  
 # References and Inspiration
 
 The main page template is edited from the [ParticleGround-Portfolio] template created by itsron143 and JanviRaina (https://github.com/itsron143/ParticleGround-Portfolio). I appreciate their kindness and generosity
